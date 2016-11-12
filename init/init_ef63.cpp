@@ -1,5 +1,5 @@
 /*
-   Copyright (c) 2016, The CyanogenMod Project
+   Copyright (c) 2013, The Linux Foundation. All rights reserved.
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
    met:
@@ -26,25 +26,18 @@
  */
 
 #include <stdlib.h>
+#include <stdio.h>
+
 #include "vendor_init.h"
 #include "property_service.h"
 #include "log.h"
 #include "util.h"
 
-#define ISMATCH(a,b)    (!strncmp(a,b,PROP_VALUE_MAX))
-
 void vendor_load_properties()
 {
-    char platform[PROP_VALUE_MAX];
-    char rc;
-    std::string device;
-    int n = 0;
     char device_buf[PROP_VALUE_MAX];
-    FILE *fp = NULL;
-
-    rc = property_get("ro.board.platform", platform);
-    if (!rc || !ISMATCH(platform, ANDROID_TARGET))
-        return;
+    FILE *fp;
+    int rc, n;
 
     fp = fopen("/dev/block/platform/msm_sdcc.1/by-name/phoneinfo", "r");
     if ( fp == NULL )
@@ -74,4 +67,6 @@ void vendor_load_properties()
     {
         property_set("ro.product.device", "ef63l");
     }
+    else
+        property_set("ro.product.device", "ef63s");
 }
