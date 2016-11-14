@@ -18,3 +18,5 @@ Camera  | 13M wide OIS / 2.1M FULL HD
 
 
 ![SKY VEGA IRON 2](http://pantech.co.kr/cmm/fms/getImage.do?atchFileId=FILE_000000000008005&fileSn=1 "SKY VEGA IRON2")
+
+Kernel source code: https://github.com/HexagonRom/android_kernel_pantech_msm8x74
