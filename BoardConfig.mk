@@ -58,5 +58,4 @@ TW_BRIGHTNESS_PATH 		:= "/sys/class/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS 		:= 255
 TW_DEFAULT_BRIGHTNESS 		:= 175
 TARGET_USES_LOGD 		:= true
-TW_EXCLUDE_SUPERSU 		:= true
 TW_TIME_ZONE_VAR		:= "THAIST-7"
