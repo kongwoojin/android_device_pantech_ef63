@@ -19,7 +19,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Checking model
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/releasetools/device_check.sh:system/bin/device_check.sh
+    $(LOCAL_PATH)/releasetools/device_check.sh:$(TARGET_COPY_OUT_VENDOR)/bin/device_check.sh
 
 # Vendor security patch level
 PRODUCT_PROPERTY_OVERRIDES += \
