@@ -39,9 +39,6 @@ TARGET_VENDOR_DEVICE_NAME := ef63
 # Unofficial build ID
 TARGET_UNOFFICIAL_BUILD_ID := ChauTruongThinh
 
-# Enable SU
-WITH_SU := true
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="ef63-user 6.0.1 MHC19Q ZNH2KAS1KN release-keys" 
 
