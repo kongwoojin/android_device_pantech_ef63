@@ -73,4 +73,7 @@
          This MUST NOT be set to true on devices produced in 2016 or later -->
     <bool name="config_trustLegacyEncryption">true</bool>
 
+    <!-- BurnIn protection. This should be enabled on devices that have OLED displays -->
+    <bool name="config_enableBurnInProtection">true</bool>
+
 </resources>
